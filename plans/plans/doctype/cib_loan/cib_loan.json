@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-05 05:11:11.501861",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_uaaj",
+  "naming_series",
+  "branch_name",
+  "status",
+  "amended_from",
+  "journal_entry",
+  "column_break_xyjj",
+  "posting_date",
+  "company",
+  "section_break_fdtz",
+  "loan_amount",
+  "interest",
+  "column_break_hrru",
+  "repayment_months",
+  "monthly_repayment",
+  "accounts_section",
+  "loan_account",
+  "column_break_ahga",
+  "repayment_account",
+  "column_break_xmzy",
+  "disbursement_account",
+  "section_break_djni",
+  "repayment_date",
+  "loan_schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uaaj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CIB Loan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "CIB-LN-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CIB-LN-"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPaid\nPartially Paid\nUnpaid"
+  },
+  {
+   "fieldname": "column_break_xyjj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_fdtz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0.000",
+   "description": "Percentage (%)",
+   "fieldname": "interest",
+   "fieldtype": "Percent",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "column_break_hrru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_months",
+   "fieldtype": "Float",
+   "label": "Repayment Months"
+  },
+  {
+   "fieldname": "monthly_repayment",
+   "fieldtype": "Float",
+   "label": "Monthly Repayment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "loan_account",
+   "fieldtype": "Link",
+   "label": "Loan Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "disbursement_account",
+   "fieldtype": "Link",
+   "label": "Disbursement Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_ahga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_account",
+   "fieldtype": "Link",
+   "label": "Repayment Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_djni",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Float",
+   "label": "Loan Amount"
+  },
+  {
+   "fieldname": "column_break_xmzy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_date",
+   "fieldtype": "Date",
+   "label": "Repayment Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "loan_schedule",
+   "fieldtype": "Table",
+   "label": "loan_schedule",
+   "options": "Loan Schedule",
+   "read_only": 1
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "options": "Journal Entry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Journal Entry",
+   "link_fieldname": "cib_loan"
+  }
+ ],
+ "modified": "2024-05-11 16:34:21.646473",
+ "modified_by": "Administrator",
+ "module": "Plans",
+ "name": "CIB Loan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

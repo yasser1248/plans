@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PLANS-.###",
+ "creation": "2024-04-28 06:59:17.157647",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_z7vx",
+  "brand",
+  "is_new_model",
+  "amended_from",
+  "column_break_blxi",
+  "date",
+  "days_until_now",
+  "section_break_gewg",
+  "loan_amount",
+  "interest",
+  "column_break_piak",
+  "repayment_months",
+  "monthly_repayment"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_z7vx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Plans Model",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_new_model",
+   "fieldtype": "Check",
+   "label": "Is New Model"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "column_break_blxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "days_until_now",
+   "fieldtype": "Float",
+   "label": "Days Until Now",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_gewg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Float",
+   "label": "Loan Amount"
+  },
+  {
+   "default": "0",
+   "description": "Percentage (%)",
+   "fieldname": "interest",
+   "fieldtype": "Percent",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "column_break_piak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_months",
+   "fieldtype": "Float",
+   "label": "Repayment Months"
+  },
+  {
+   "fieldname": "monthly_repayment",
+   "fieldtype": "Float",
+   "label": "Monthly Repayment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-04 15:53:42.394139",
+ "modified_by": "Administrator",
+ "module": "Plans",
+ "name": "Plans Model",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
