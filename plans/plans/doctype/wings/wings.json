@@ -9,7 +9,9 @@
   "section_break_jjpt",
   "amended_from",
   "wing_name",
-  "color"
+  "color",
+  "column_break_qnsi",
+  "model_year"
  ],
  "fields": [
   {
@@ -35,12 +37,21 @@
    "fieldname": "color",
    "fieldtype": "Float",
    "label": "Color"
+  },
+  {
+   "fieldname": "column_break_qnsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model_year",
+   "fieldtype": "Data",
+   "label": "Model Year"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-04 20:06:16.873581",
+ "modified": "2024-06-06 13:56:20.612734",
  "modified_by": "Administrator",
  "module": "Plans",
  "name": "Wings",

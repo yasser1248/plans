@@ -102,11 +102,11 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-permission_query_conditions = {
-	# "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-    "Wings" : "plans.plans.overrides.wings.permission_query_conditions"
+# permission_query_conditions = {
+# 	# "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#     # "Wings" : "plans.plans.overrides.wings.permission_query_conditions"
 	
-}
+# }
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -116,11 +116,11 @@ permission_query_conditions = {
 # ---------------
 # Override standard doctype classes
 
-override_doctype_class = {
-	"Quotation": "plans.plans.overrides.quotation.customsQuotation" ,
-	# "Sales Invoice": "plans.plans.overrides.sales_invoice.JamilSalesInvoice"
-	# "Sales Order": "plans.plans.overrides.sales_over.customsSalesOrder"
-}
+# override_doctype_class = {
+# 	"Quotation": "plans.plans.overrides.quotation.customsQuotation" ,
+# 	# "Sales Invoice": "plans.plans.overrides.sales_invoice.JamilSalesInvoice"
+# 	# "Sales Order": "plans.plans.overrides.sales_over.customsSalesOrder"
+# }
 
 # Document Events
 # ---------------
