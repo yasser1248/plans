@@ -6,4 +6,4 @@ from frappe.model.document import Document
 
 
 class Wings(Document):
-	pass
+    print("from wings local")
