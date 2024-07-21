@@ -6,4 +6,5 @@ from frappe.model.document import Document
 
 
 class Wings(Document):
-    print("from wings local")
+	print("jamil")
+	print("yasser")
